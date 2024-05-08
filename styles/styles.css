@@ -1,42 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
+
 h1 {
     color: steelblue;
 }
+
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
 p {
     padding: 0;
 }
-main{
+
+main {
     max-width: 840px;
 }
-aside{
+
+aside {
+    position: relative;
     width: auto;
+    text-align: center;
+    }
+/* Changed aside h2 heading color to bronze to make it more easily visible when positioned on the image. */
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 650px;
+    color: #c38946;
+}
+
+aside img { 
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin: 1rem;
+    border: 1px solid #116b92;
+    text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
     margin: 1rem;
     border: 1px solid #116b92;
     padding: 1rem;
     background-color: #eee8d3;
     color: #116b92;
-    }
-aside img{ 
-    width: 200px;
-    height: auto;
-}
-footer{
-    margin: 1rem;
-    border: 1px solid #116b92;
-    text-align: center;
 }
