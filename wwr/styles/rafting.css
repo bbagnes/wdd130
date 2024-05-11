@@ -24,7 +24,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    color: var(--primary-color);
+    font-size: 2rem;
 }
 
 p {
@@ -89,9 +90,8 @@ section {
 }
 
 section img {
-    width: 480px;
+    width: 470px;
 }
-
 
 .socialmedia a:link {
 margin: auto;
