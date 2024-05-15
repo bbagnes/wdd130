@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* changed background-color of h1 element to meet AA level requirements. Previously steelblue by example directions. */
 nav {
-    background-color: steelblue;
+    background-color: #116b92;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -23,8 +23,8 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
-    border-bottom: solid steelblue;
+    color: #116b92;
+    border-bottom: solid #116b92;
     border-width: 1px;
     padding: 10px;
     }
