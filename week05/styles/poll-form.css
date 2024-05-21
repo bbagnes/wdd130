@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "montserrat-italic";
+    src: url(../fonts/Montserrat-Italic.ttf) format("ttf");
+}
+
+* {
+    font-family: Montserrat-Italic;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat-Italic, Georgia, sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    margin: auto;
+    width: 550px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 1rem;
+    text-align: center;
+    color:navy;
+
+}
+
+form {
+    display: grid;
+    width: 550px;
+    background-color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color:navy;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    grid-column: 1/2;
+    text-wrap: nowrap;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input, select {
+    align-items:flex-end;
+    grid-column: 2/3;
+    width: 300px;
+}
+
+input[type="text"] {
+    width: 300px;
+    align-items: end;
+}
+
+select {
+    width: 100px;
+    font-size: 1rem;
+}
+
+textarea {
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    border: none;
+    border-radius: .5rem;
+    background-color: navy;
+    color:#fff;
+    margin: 1rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    width: 150px;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: mediumorchid;
+}
+
+footer {
+    width: 550px;
+    margin: 1rem auto 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+        display: grid;
+        align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+    text-align: right;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    text-align: right;
+}
+
+.residences {
+    text-align: center;
+}
+
+
+
+
+
