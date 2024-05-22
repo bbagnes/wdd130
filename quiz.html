@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device width,iniital-scale=1.0">
+<title>WDD 130 | Quiz Form</title>
+<meta name="description"  content="Brigham Bagnes, WDD 130, Quiz Form">
+<meta name="author" content="Brigham Bagnes">
+<link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+<header>
+<h1>HTML & CSS Knowledge Quiz</h1>
+</header>
+<main>
+<form>
+    
+    <label for="q1">1. What is the syntax for the CSS universal selector?</label>
+    <input type="text" id="q1" name="q1">
+    <label for="q2">2. List and describe the basic element types used to create a form.</label>
+    <textarea id="q2" name="q2" rows="4" maxlength="360" placeholder="Answer length limit is 360 characters."></textarea>
+    <label for="q3">3. In HTML, what are the three major sections of the body?</label>
+    <select id="q3" name="q3">          
+        <option value="" selected disabled>Choose one</option>
+        <option value="wrong1">nav, article, section</option>
+        <option value="right">header, main, footer</option>
+        <option value="wrong2">head, main, footer</option>
+        </select>
+    <label for="q4">4. What is the value for the bottom padding in the example below: <br>
+        <strong>padding: 30px 10px 20px 0px; </strong></label>
+    <input type="number" id="q4" name="q4" min="0" max="30" step="10">
+    <button type="submit">Submit Quiz</button>
+</form>
+</main>
+<footer>
+    <p>©2024 | HTML & CSS Knowledge Quiz | Brigham Bagnes</p>
+</footer>
+</body>
+
+
+</html>
