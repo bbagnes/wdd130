@@ -223,6 +223,11 @@ footer {
     border-top: 2px solid #C38946;
     }
 
+footer a {
+    color:#dcba93;
+    align-content: center;
+}
+
 .hero_2 {
     display: grid;
     position: relative;
@@ -452,7 +457,7 @@ form button {
     margin: 1rem;
     padding: .75rem;
     font-size: 1.2rem;
-    width: 150px;
+    width: 200px;
     height: 50px;
     justify-self: center;
 }
