@@ -72,29 +72,6 @@ header, footer, .grid {
     max-width: 840px;
     margin: 0 auto;
 }
-main {
-    grid-column: 2/3;
-    margin: 1rem;
-}
-
-aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-
-}
-
-form {
-        display: grid;
-        width: 840px;
-        background-color: #eee8d3;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 0.5rem;
-        padding: 1rem;
-        margin: 0 auto;
-    }
-
 
 /* Class Selectors */
 
@@ -110,34 +87,16 @@ form {
     display: grid;
     align-items: center;
 }
-/* 
-.hero_2 {
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 60px auto auto;
-}
-
-.meet_0 {
-    grid-column: span 3;
-    grid-row: 1;
-}
-
-.meet_1 {
-    grid-column: 1/2;
-    grid-row: 2;
-}
-
-.meet_2 {
+main {
     grid-column: 2/3;
-    grid-row: 2;
+    margin: 1rem;
 }
 
-.meet_3 {
-    grid-column: 3/4;
-    grid-row: 2;
-}
-
-.company_info {
-    display: grid; */
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 
 }
+
