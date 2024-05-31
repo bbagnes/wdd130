@@ -238,7 +238,7 @@ footer a {
     position: relative;
     width: 960px;
     grid-template-columns: repeat(3, 310px);
-    grid-template-rows: 100px 15px 400px 500px 100px;
+    grid-template-rows: 100px 15px 400px 500px 50px;
     align-items:start;
     text-align: center;
     background-color: #EEE8D3;
@@ -453,7 +453,7 @@ a.button {
     background-color:#116B92;
     color:#fff;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: 420px;
     padding: .75rem;
     font-size: 1.2rem;
