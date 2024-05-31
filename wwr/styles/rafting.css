@@ -238,7 +238,7 @@ footer a {
     position: relative;
     width: 960px;
     grid-template-columns: repeat(3, 310px);
-    grid-template-rows: 100px 15px 200px 700px;
+    grid-template-rows: 100px 15px 400px 500px 100px;
     align-items:start;
     text-align: center;
     background-color: #EEE8D3;
@@ -296,6 +296,13 @@ figure.meet_4 img, figure.meet_5 img, figure.meet_6 img {
     border: 1px solid #116B92;
     opacity: 1;
 }
+
+figcaption {
+    text-align: left;
+    width: 260px;
+    padding: 0;
+    Margin: 0;
+}
     
  p.meet_1_2, p.meet_2_2, p.meet_3_2 {
     grid-row: 3;
@@ -314,6 +321,7 @@ figure.meet_4 img, figure.meet_5 img, figure.meet_6 img {
     border: 1px solid #116B92;
     border-top: none;
 }
+
 .company_info h2 {
     justify-content: center;
     text-align: center;
@@ -345,12 +353,12 @@ figure.meet_4 img, figure.meet_5 img, figure.meet_6 img {
     grid-row: 5;
     align-items: start;
 }
+
 .company_info aside {
     grid-column: 2;
     grid-row: span 4;
     justify-content: end;
     margin-left: 20px;
-
 }
 
 form {
@@ -366,7 +374,6 @@ form {
     color:#EEE8D3;
     align-content: center;
     font-weight: 500;
-
 }
 
 form h2 {
@@ -422,12 +429,10 @@ form.ask-us {
     align-content: end;
 }
 
-form button {
-    grid-column: span 2;
-    grid-row: 3;
+form button, article button, .table button {    
     border: none;
     border-radius: .5rem;
-    background-color: navy;
+    background-color:#116B92;
     color:#fff;
     margin: 1rem;
     padding: .75rem;
@@ -437,24 +442,73 @@ form button {
     justify-self: center;
 }
 
+form button {
+    grid-column: span 2;
+}
+
+.table button {
+    margin-left: 390px;
+    justify-content: center;
+}
+
+.meet_6 button {
+    width: 2px;
+    height: 2px;
+    background-color: #EEE8D3;
+    margin: 0;
+    padding: 0;
+    color:#116B92;
+}
+
+article a, article a button  {
+    grid-column: span 3;
+}
+
 button:hover {
     background-color: mediumorchid;
 }
 
 table {
     background-color:#EEE8D3;
-    border: 1px solid #116B92;
+    border: 2px solid #116B92;
+    border-collapse: collapse;
     text-align: left;
-    padding: 10px;  
+    padding: 0;  
     
 }
 
 table caption {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    border-collapse: collapse;
     font-size: 2.5rem;
     text-align: center;
     border: 1px solid #116B92;
     border-bottom: none;
+}
 
+thead, tfoot {
+    background-color:#dcba93;
+}
+
+tfoot th {
+    text-align: left;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color:#dcba93;
+}
+
+th.wide, td.wide {
+        width: 220px;
+}
+
+th, td {
+    width: 100px;
+    border: 1px solid #116B92;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    text-wrap: wrap;
 }
