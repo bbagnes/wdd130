@@ -21,12 +21,8 @@ header img {
 body {
     font-family: var(--paragraph-font);
     padding: 20px;
-    max-width: 963px;
+    max-width: 960px;
     margin:auto;
-}
-
-main {
-    background-color: #EEE8D3;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,8 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
     font-size: 2.5rem;
     text-align: center;
-   }
-
+}
 
 header {
     display: grid;
@@ -48,8 +43,7 @@ header {
     border-bottom: solid 3px #C38946;
 }
 
-
-.hero_1 {
+.hero_1, .hero_2 {
     display:grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: auto auto;
@@ -60,34 +54,47 @@ header {
     margin-top: 0px;
     margin-bottom: 0px;
     justify-content: center;
-    }
+}
 
-.hero_1 h1 {
+.hero_1 h1, .hero_2 h1 {
     grid-column: 1;
     height: 50px;
     grid-row: span 2;
     font-size: 3rem;
     opacity: 1;
-    }
+}
 
-.hero_1 img {
+.hero_2 h1 {
+    padding-bottom: 275px;
+    border: 1px solid #116B92;
+    margin-bottom: 10px;
+}
+
+.hero_1 img, .hero_2 img {
     position: absolute;
     grid-column: 1/3;
     grid-row: 1/3;
     width: 960px;
-    height: auto;
-    opacity: .3;
+    height: auto;    
     margin-bottom: 5px;
     z-index: -1;
-    }
+}
+
+.hero_1 img {
+    opacity: .3;
+}
+
+.hero_2 img {
+    opacity: .5;
+    
+}
 
 .hero_1 p {
     grid-column: 1/3;
     grid-row: 2/3;
     padding: 10px;
-    padding-left: 32px;
-    
-    }
+    padding-left: 32px;    
+}
 
 .hero_1 article img {
     position: relative;
@@ -98,7 +105,7 @@ header {
     height: auto;
     opacity: 1;
     padding: 10px;
-    }
+}
 
 nav {
     display: flex;
@@ -175,7 +182,7 @@ section {
 }
 
 .history p{
-        padding: 5px;        
+    padding: 5px;        
 }
 
 .p1 {
@@ -214,26 +221,7 @@ section {
     justify-content:left;
     }
 
-.socialmedia a:link {
-margin: auto;
-justify-content: right;
-background-color: #285C1E;
-border: none;
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #285C1E;
-    color:#EEE8D3;
-    border-top: 2px solid #C38946;
-    }
-
-footer a {
-    color:#EEE8D3;
-}
-
-.hero_2 {
+.staff {
     display: grid;
     position: relative;
     width: 960px;
@@ -247,7 +235,7 @@ footer a {
     border: 1px solid #285C1E;
 }
 
-.hero_2 h1 {
+.staff h1 {
     grid-column: span 4;    
     grid-row: 1;
     height: 100px;
@@ -311,47 +299,32 @@ p.meet_1_2, p.meet_2_2, p.meet_3_2 {
     border: 1px solid #116B92;
 }
 
-.company_info {
+.company_info, .more_than {
     display: grid;
-    width: 960px;
-    grid-template-columns: 300px 600px; 
-    grid-template-rows: 150px 5px 100px 100px 100px 180px;
+    width: 959px;
     background-color: #EEE8D3;
     color:#116B92;
     border: 1px solid #116B92;
-    border-top: none;
 }
 
-.company_info h2 {
+.company_info {
+    grid-template-columns: 300px 600px;
+    grid-template-rows: 150px 5px 100px 100px 100px 180px;
+}
+
+.company_info h2, .more_than h2 {
+    width: 960px;
     justify-content: center;
     text-align: center;
     grid-column: span 2;  
     grid-row: 1;
-    justify-content: space-between; 
+    text-wrap: wrap;
 }
 
-.company_1 p {
-    grid-column: 1;
-    grid-row: 2;
+.company_1 p, .company_2 p, .company_3 p, .company_4 p {
+    grid-column: 1;    
     align-items: start;
-}
-
-.company_2 p {
-    grid-column: 1;
-    grid-row: 3;
-    align-items: start;
-}
-
-.company_3 p {
-    grid-column: 1;
-    grid-row: 4;
-    align-items: start;
-}
-
-.company_4 p {
-    grid-column: 1;
-    grid-row: 5;
-    align-items: start;
+    text-wrap: wrap;
 }
 
 .company_info aside {
@@ -361,10 +334,42 @@ p.meet_1_2, p.meet_2_2, p.meet_3_2 {
     margin-left: 20px;
 }
 
+.more_than {
+    box-sizing: border-box;
+    display: inline-block;
+    /* grid-template-rows: 60px 100px; */
+    border: 1px solid #116B92;
+    margin: 0;
+    padding: 0;
+}
+.more_than h2 {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #116B92;
+}
+
+.more_than img {  
+    width: 260px;
+    height: 170px;
+    float: left;
+}
+
+.more_than p {
+    display: inline-block;
+}
+
+p.flex_2 {
+    text-align:justify;
+}
+
+img.flex_3 {
+    float: right;
+}
+
 form {
     display: grid;
     max-width: 960px;
-    padding: 10px;    
+    padding: 10px;
+    padding-top: 0;    
     margin: 0 auto;
     grid-template-columns: 450px 450px;
     grid-template-rows: 90px 320px 80px;
@@ -376,15 +381,23 @@ form {
     font-weight: 500;
 }
 
+form.subscribe {
+    grid-template-columns: 450px;
+    align-content: space-between;
+}
+
 form h2 {
     display: flex;
     justify-content: center;
-    align-content: center;
     color:#EEE8D3;
     grid-column: span 2;
     grid-row: 1;
     padding-top: 0;
     margin-bottom: 30px;
+}
+
+form button {
+    grid-column: 1;
 }
 
 fieldset {
@@ -398,21 +411,6 @@ fieldset {
 .form-item {
     display: grid;
     align-items: center;
-}
-
-form.column1 {
-grid-template-columns: 3fr 1fr;
-grid-column: 1;
-grid-row: 1;
-margin: 0.5rem 0;
-text-align: right;
-}
-
-form.column2 {
-grid-template-columns: 1fr 2fr;
-grid-column: 2;
-grid-row: 1;
-text-align: right;
 }
 
 form.ask-us {    
@@ -447,6 +445,10 @@ form button {
     grid-column: span 2;
 }
 
+form button.subscribe {
+    grid-column: 1;
+}
+
 a.button {
     border: none;
     border-radius: .5rem;
@@ -462,7 +464,6 @@ a.button {
     justify-self: center;
     text-decoration: none;
 }
-
 
 .meet_6 button {
     width: 2px;
@@ -481,16 +482,36 @@ button:hover {
     background-color: mediumorchid;
 }
 
-table {
+.ask_us, .video {
+    position: relative;
+}
+
+aside video {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    padding-left: 500px;
+    margin-top: 150px;
+}
+
+aside.button {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    padding-left: 550px;
+    margin-top: 200px;
+}
+
+.table {
     background-color:#EEE8D3;
     border: 2px solid #116B92;
     border-collapse: collapse;
     text-align: left;
     padding: 0;  
-    
 }
 
 table caption {
+    background-color: #EEE8D3;
     font-family: var(--heading-font);
     color: var(--primary-color);
     border-collapse: collapse;
@@ -508,10 +529,7 @@ tfoot th {
     height: 100px;
     text-align: initial;
     padding-top: 2px;
-    padding-bottom: 30px;
-    
-
-
+    padding-bottom: 30px; 
 }
 
 tbody > tr:nth-of-type(even) {
@@ -530,4 +548,23 @@ th, td {
     padding: 3px;
     text-align: center;
     text-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #285C1E;
+    color:#EEE8D3;
+    border-top: 2px solid #C38946;
+}
+
+footer a {
+    color:#EEE8D3;
+}
+
+.socialmedia a:link {
+margin: auto;
+justify-content: right;
+background-color: #285C1E;
+border: none;
 }
