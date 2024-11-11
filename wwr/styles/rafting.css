@@ -161,7 +161,7 @@ section {
     padding-top: 5px;
     padding-bottom: 5px;
     align-content: space-between;
-    }
+}
 
 .history h2 {
     grid-row: 1;
@@ -219,7 +219,7 @@ section {
     margin: 0px;
     justify-items:center;
     justify-content:left;
-    }
+}
 
 .staff {
     display: grid;
